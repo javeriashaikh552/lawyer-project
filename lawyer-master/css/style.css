@@ -3,6 +3,7 @@
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
+  
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -17,7 +18,8 @@
 }
 #header-carousel{
   filter: opacity(0.3);
-  filter: url(#black-filter);
+  filter: saturate(155%);
+  filter: url(#343a40;-filter);
 }
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
