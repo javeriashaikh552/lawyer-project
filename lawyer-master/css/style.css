@@ -3699,7 +3699,7 @@ h6 {
 /* line 14, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_blog.scss */
 .blog_area a:hover, .blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #000 0%, #000 99%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   -webkit-transition: 0.5s;
@@ -3763,7 +3763,7 @@ h6 {
 .single-blog .tag {
   text-align: left;
   display: inline-block;
-  float: left;
+  /* float: left; */
   font-size: 13px;
   font-weight: 300;
   margin-right: 22px;
@@ -5191,7 +5191,7 @@ h6 {
 /* line 76, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card .card-body a:hover {
   background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
@@ -5299,9 +5299,9 @@ h6 {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
-  -webkit-animation: 1s;
+  /* -webkit-animation: 1s; */
 }
 
 /* line 150, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_blog_part.scss */
@@ -5578,4 +5578,56 @@ h2{
 
 .team .team-item:hover .team-text {
   height: 160px;
+}
+
+
+
+.testimonial-text::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: -24px;
+  left: 28px;
+  border: 12px solid;
+  border-color: #37373F transparent transparent transparent;
+  z-index: 1;
+}
+
+.testimonial-carousel .owl-dots {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #B49C73;
+}
+
+.testimonial-carousel .owl-dot::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 2px solid #B49C73;
+  border-radius: 20px;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: #343a40;
+}
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
